@@ -1,6 +1,5 @@
 
 import streamlit as st
-from streamlit_extras.let_it_rain import rain
 
 
 def emoji_demoji(addFlag):
@@ -35,7 +34,6 @@ def pageSettings():
     st.set_page_config(page_title='Emoji-Demoji', page_icon=':sunglasses:', initial_sidebar_state='auto')
     addFlag = st.sidebar.radio(label='Select Emoji or Demoji', options=['Emoji', 'Demoji'])
 
-    rain(emoji="🎈", font_size=54, falling_speed=5, animation_length="infinite", )
     # hide hamburger menu and footer
     hide_st_style = """
                     <style>
